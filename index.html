@@ -1,0 +1,91 @@
+<html><body><meta charset="utf-8"><style>
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+</style><h1 class="title">frontend-index.HTML</h1><p></p><div align="left">
+ <span style="font-size:16">&lt;!DOCTYPE&nbsp;html&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;html&nbsp;lang="en"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;head&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;meta&nbsp;charset="UTF-8"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;meta&nbsp;name="viewport"&nbsp;content="width=device-width,&nbsp;initial-scale=1.0"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;title&gt;FindMyBusinessZA&lt;/title&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;link&nbsp;rel="stylesheet"&nbsp;href="style.css"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;/head&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;body&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&lt;header&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;div&nbsp;class="logo"&gt;Find&lt;span&gt;MyBusiness&lt;/span&gt;ZA&lt;/div&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;/header&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&lt;section&nbsp;class="hero"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;h1&gt;Find&nbsp;Businesses&nbsp;Near&nbsp;You&lt;/h1&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;p&gt;Select&nbsp;your&nbsp;location&nbsp;and&nbsp;category&nbsp;to&nbsp;discover&nbsp;local&nbsp;services.&lt;/p&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;div&nbsp;class="search-box"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&lt;select&nbsp;id="province"&nbsp;onchange="updateTowns()"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=""&gt;Select&nbsp;Province&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Western&nbsp;Cape"&gt;Western&nbsp;Cape&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Gauteng"&gt;Gauteng&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="KwaZulu-Natal"&gt;KwaZulu-Natal&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&lt;select&nbsp;id="town"&gt;&lt;option&nbsp;value=""&gt;Select&nbsp;Town&lt;/option&gt;&lt;/select&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&lt;select&nbsp;id="category"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=""&gt;Select&nbsp;Category&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Restaurants"&gt;Restaurants&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Car&nbsp;Sales"&gt;Car&nbsp;Sales&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Property"&gt;Property&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Jobs"&gt;Jobs&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Beauty"&gt;Beauty&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value="Repairs"&gt;Repairs&lt;/option&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick="searchLocation()"&gt;Search&lt;/button&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;/div&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;/section&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&lt;section&nbsp;class="section"&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;h2&gt;Search&nbsp;Results&lt;/h2&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&nbsp;&nbsp;&lt;div&nbsp;id="results"&nbsp;class="grid"&gt;&lt;/div&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;/section&gt;</span>
+</div><br><div align="left">
+ <span style="font-size:16">&lt;script&nbsp;src="script.js"&gt;&lt;/script&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;/body&gt;</span>
+</div><div align="left">
+ <span style="font-size:16">&lt;/html&gt;</span>
+</div><p></p></body></html>
